@@ -1,0 +1,227 @@
+commit 262274f8b57a2103ed29be1d12571e2e0f94cd6f
+Author: Charles Muriuki <charles@newera.com>
+Date:   Tue Jan 7 00:37:16 2025 +0000
+
+    Added Release.md file amd updated Readme.md
+
+diff --git a/Readme.md b/Readme.md
+index 8ac7bf2..885c4c0 100644
+--- a/Readme.md
++++ b/Readme.md
+@@ -4,21 +4,3 @@
+ 4. Division Handling: Special error handling is included for division operations to prevent division by zero, displaying an appropriate error message if the second number is zero.
+ 5. Expected Output: After performing the selected operation, the script displays the result in a clear format, indicating the operation performed and the computed value.
+ 6. Changes: The script can be easily extended by adding more operations or enhancing error handling for invalid inputs, making it a versatile tool for basic command-line calculations.
+-
+-
+-echo "END================END"
+- 
+- Save the file and exit the text editor. 
+- Make the script executable by running the command below: 
+- $ chmod +x calculator.sh
+- 
+- Run the script by executing the command below: 
+- $ ./calculator.sh
+- 
+- You will be prompted to enter two numbers and select an arithmetic operation. 
+- Conclusion 
+- You have successfully created a simple calculator script using the bash shell. You can now perform basic arithmetic operations using the script. 
+- You can also add more arithmetic operations or improve the script to handle more complex calculations. 
+- If you have any questions or feedback, feel free to leave a comment. 
+- Happy coding!
+-
+diff --git a/release.md b/release.md
+new file mode 100644
+index 0000000..555516b
+--- /dev/null
++++ b/release.md
+@@ -0,0 +1,15 @@
++echo "END================END"
++ 
++ Save the file and exit the text editor. 
++ Make the script executable by running the command below: 
++ $ chmod +x calculator.sh
++ 
++ Run the script by executing the command below: 
++ $ ./calculator.sh
++ 
++ You will be prompted to enter two numbers and select an arithmetic operation. 
++ Conclusion 
++ You have successfully created a simple calculator script using the bash shell. You can now perform basic arithmetic operations using the script. 
++ You can also add more arithmetic operations or improve the script to handle more complex calculations. 
++ If you have any questions or feedback, feel free to leave a comment. 
++ Happy coding!
+\ No newline at end of file
+
+commit c2c279b2a2b56d5982e694936a011927934a0101
+Author: Charles Muriuki <charles@newera.com>
+Date:   Tue Jan 7 00:33:30 2025 +0000
+
+    Updated calculator.sh and readme.md
+
+diff --git a/Readme.md b/Readme.md
+index 2c841ac..8ac7bf2 100644
+--- a/Readme.md
++++ b/Readme.md
+@@ -5,3 +5,20 @@
+ 5. Expected Output: After performing the selected operation, the script displays the result in a clear format, indicating the operation performed and the computed value.
+ 6. Changes: The script can be easily extended by adding more operations or enhancing error handling for invalid inputs, making it a versatile tool for basic command-line calculations.
+ 
++
++echo "END================END"
++ 
++ Save the file and exit the text editor. 
++ Make the script executable by running the command below: 
++ $ chmod +x calculator.sh
++ 
++ Run the script by executing the command below: 
++ $ ./calculator.sh
++ 
++ You will be prompted to enter two numbers and select an arithmetic operation. 
++ Conclusion 
++ You have successfully created a simple calculator script using the bash shell. You can now perform basic arithmetic operations using the script. 
++ You can also add more arithmetic operations or improve the script to handle more complex calculations. 
++ If you have any questions or feedback, feel free to leave a comment. 
++ Happy coding!
++
+diff --git a/calculator.sh b/calculator.sh
+index ab47a16..3311922 100644
+--- a/calculator.sh
++++ b/calculator.sh
+@@ -44,21 +44,4 @@ case $choice in
+     *)
+         echo "Invalid choice."
+         ;;
+-esac
+-
+-
+-echo "END================END"
+- 
+- Save the file and exit the text editor. 
+- Make the script executable by running the command below: 
+- $ chmod +x calculator.sh
+- 
+- Run the script by executing the command below: 
+- $ ./calculator.sh
+- 
+- You will be prompted to enter two numbers and select an arithmetic operation. 
+- Conclusion 
+- You have successfully created a simple calculator script using the bash shell. You can now perform basic arithmetic operations using the script. 
+- You can also add more arithmetic operations or improve the script to handle more complex calculations. 
+- If you have any questions or feedback, feel free to leave a comment. 
+- Happy coding!
+\ No newline at end of file
++esac
+\ No newline at end of file
+
+commit bf6a18314cec6e452217822714bd05a84e145fc7
+Author: Charles Muriuki <charles@newera.com>
+Date:   Tue Jan 7 00:31:55 2025 +0000
+
+    Updated .gitignore file
+
+diff --git a/.gitignore b/.gitignore
+index 9825bd8..89c03ed 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1,2 @@
+ Contrubutors.md
++*.log
+
+commit 293b21573e4a00c1e6129411cd029f3192ce8a82
+Author: Charles Muriuki <charles@newera.com>
+Date:   Sat Jan 4 17:44:57 2025 +0000
+
+    This is the first commit. Calculator Version is V1.0.0. Group = Class 22
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..9825bd8
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++Contrubutors.md
+diff --git a/Readme.md b/Readme.md
+new file mode 100644
+index 0000000..2c841ac
+--- /dev/null
++++ b/Readme.md
+@@ -0,0 +1,7 @@
++1. Overview and Introduction: This Bash script performs basic arithmetic operations (addition, subtraction, multiplication, and division) between two numbers entered by the user. It provides a simple command-line interface for mathematical calculations.
++2. Input: The script prompts the user to input two numbers and then select an arithmetic operation from the displayed menu. The menu options are addition (+), subtraction (-), multiplication (*), and division (/).
++3. Operations: Based on the user’s choice, the script computes the result of the selected operation using the bc utility for accurate mathematical calculations.
++4. Division Handling: Special error handling is included for division operations to prevent division by zero, displaying an appropriate error message if the second number is zero.
++5. Expected Output: After performing the selected operation, the script displays the result in a clear format, indicating the operation performed and the computed value.
++6. Changes: The script can be easily extended by adding more operations or enhancing error handling for invalid inputs, making it a versatile tool for basic command-line calculations.
++
+diff --git a/calculator.sh b/calculator.sh
+new file mode 100644
+index 0000000..ab47a16
+--- /dev/null
++++ b/calculator.sh
+@@ -0,0 +1,64 @@
++#!/bin/bash
++
++# CALCULATOR FOR BASIC MATHEMATICS
++
++echo "CALCULATOR"
++echo "START================START"
++
++# Ask for two numbers
++read -p "Please enter first number: " num1
++read -p "Please enter second number: " num2
++
++# Display the operation menu
++echo "Select your operation:"
++echo "1. Addition(To add two numbers) (+)"
++echo "2. Subtraction(To subtract two numbers) (-)"
++echo "3. Multiplication (To multiply) (*)"
++echo "4. Division (To divide two numbers) (/)"
++
++# Read and select the user's choice
++read -p "Select arithmetic choice between [1-4]: " choice
++
++# Perform the arithmetic operations based on the choice selected
++case $choice in
++    1)
++        result=$(echo "$num1 + $num2" | bc)
++        echo "Result: $num1 + $num2 = $result"
++        ;;
++    2)
++        result=$(echo "$num1 - $num2" | bc)
++        echo "Result: $num1 - $num2 = $result"
++        ;;
++    3)
++        result=$(echo "$num1 * $num2" | bc)
++        echo "Result: $num1 * $num2 = $result"
++        ;;
++    4)
++        if [ "$num2" -eq 0 ]; then
++            echo "Error: Division by zero is not allowed."
++        else
++            result=$(echo "scale=2; $num1 / $num2" | bc)
++            echo "Result: $num1 / $num2 = $result"
++        fi
++        ;;
++    *)
++        echo "Invalid choice."
++        ;;
++esac
++
++
++echo "END================END"
++ 
++ Save the file and exit the text editor. 
++ Make the script executable by running the command below: 
++ $ chmod +x calculator.sh
++ 
++ Run the script by executing the command below: 
++ $ ./calculator.sh
++ 
++ You will be prompted to enter two numbers and select an arithmetic operation. 
++ Conclusion 
++ You have successfully created a simple calculator script using the bash shell. You can now perform basic arithmetic operations using the script. 
++ You can also add more arithmetic operations or improve the script to handle more complex calculations. 
++ If you have any questions or feedback, feel free to leave a comment. 
++ Happy coding!
+\ No newline at end of file

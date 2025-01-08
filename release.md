@@ -1,5 +1,10 @@
 echo "END================END"
  
+ Latest Release: Includes percentage calculation(%)
+ This is version 2 of our application
+
+
+
  Save the file and exit the text editor. 
  Make the script executable by running the command below: 
  $ chmod +x calculator.sh

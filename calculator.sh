@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# CALCULATOR FOR BASIC MATHEMATICS
+
 
 echo "CALCULATOR"
 echo "START================START"
@@ -15,9 +15,10 @@ echo "1. Addition(To add two numbers) (+)"
 echo "2. Subtraction(To subtract two numbers) (-)"
 echo "3. Multiplication (To multiply) (*)"
 echo "4. Division (To divide two numbers) (/)"
+echo "5. Percentage (To find percentage of two numbers) (%)"
 
 # Read and select the user's choice
-read -p "Select arithmetic choice between [1-4]: " choice
+read -p "Select arithmetic choice between [1-5]: " choice
 
 # Perform the arithmetic operations based on the choice selected
 case $choice in
@@ -41,6 +42,13 @@ case $choice in
             echo "Result: $num1 / $num2 = $result"
         fi
         ;;
+    5)
+        if [ "$num2" -eq 0 ]; then
+            echo "Error: Division by zero is not allowed."
+        else
+            result=$(echo "scale=2; $num1 * $num2 / 100" | bc)
+            echo "Result: $num1 % of $num2 = $result"
+        fi
     *)
         echo "Invalid choice."
         ;;

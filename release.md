@@ -18,3 +18,4 @@ echo "END================END"
  You can also add more arithmetic operations or improve the script to handle more complex calculations. 
  If you have any questions or feedback, feel free to leave a comment. 
  Happy coding!
+1. Overview and Introduction: This Bash script performs basic arithmetic operations (addition, subtraction, multiplication, and division) between two numbers entered by the user. It provides a simple command-line interface for mathematical calculations.

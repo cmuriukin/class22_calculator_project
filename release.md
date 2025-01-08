@@ -18,3 +18,4 @@ echo "END================END"
  You can also add more arithmetic operations or improve the script to handle more complex calculations. 
  If you have any questions or feedback, feel free to leave a comment. 
  Happy coding!
+3. Operations: Based on the user’s choice, the script computes the result of the selected operation using the bc utility for accurate mathematical calculations.

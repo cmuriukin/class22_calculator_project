@@ -54,5 +54,13 @@ case $choice in
         ;;
 esac
 
+
 echo "END================END"
 #security check and update
+=======
+
+#This is the end of the script
+echo "END================END"
+```
+#New updates to the script will be added soon = Stay tuned
+

@@ -21,3 +21,10 @@ echo "END================END"
 
 1. Overview and Introduction: This Bash script performs basic arithmetic operations (addition, subtraction, multiplication, and division) between two numbers entered by the user. It provides a simple command-line interface for mathematical calculations.Operations: Based on the user’s choice, the script computes the result of the selected operation using the bc utility for accurate mathematical calculations.
 
+
+
+ubuntu@ip-172-31-19-82:~/class-22/git_project$ git status
+On branch feature/security_update
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   calculator.sh

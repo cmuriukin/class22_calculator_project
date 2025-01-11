@@ -53,3 +53,6 @@ case $choice in
         echo "Invalid choice."
         ;;
 esac
+
+echo "END================END"
+#security check and update

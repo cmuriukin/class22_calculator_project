@@ -5,3 +5,20 @@
 5. Percentage: To find percentage of two numbers(%)
 6. Expected Output: After performing the selected operation, the script displays the result in a clear format, indicating the operation performed and the computed value.
 7. Changes: The script can be easily extended by adding more operations or enhancing error handling for invalid inputs, making it a versatile tool for basic command-line calculations.
+
+
+    a platform to host git code repositories​
+
+    https://github.com​
+
+    launched in 2008​
+
+    most popular Git host​
+
+    allows users to collaborate on projects from anywhere​
+
+    GitHub makes git social! ​
+
+    Free to start​
+
+    Owned by Microsoft

@@ -1,0 +1,4 @@
+This is my first git file under Charles' project. 
+Want to play around with it and see how much I can learn with branches. 
+Branching can be fun, isn't it? 
+
